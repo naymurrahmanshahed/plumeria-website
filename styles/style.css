@@ -141,22 +141,25 @@ header {
   margin-top: 2rem;
   text-align: justify;
 }
-.header-btn {
+.header-btn,
+.about-btn {
   display: inline-block;
   margin-top: 1rem;
   background-color: var(--color-primary);
   color: var(--color-bg-4);
-  padding: 0.5rem 2rem;
+  padding: 0.4rem 2rem;
   font-weight: 500;
   border-radius: 2rem;
   transition: var(--transition);
 }
 
-.header-btn:hover {
+.header-btn:hover,
+.about-btn:hover {
   color: var(--color-light);
   background-color: var(--color-bg-4);
 }
-.header-btn:active {
+.header-btn:active,
+.about-btn:active {
   outline: 0.5rem solid var(--color-primary-varient);
 }
 
@@ -169,7 +172,7 @@ header {
   right: 0;
 }
 .header-image-lg {
-  width: 21rem;
+  width: 17rem;
   /* height: 28rem; */
   position: absolute;
   top: 1rem;
@@ -201,7 +204,7 @@ header {
   width: 15rem;
   position: absolute;
   top: 75vh;
-  left: 25rem;
+  left: 20rem;
   transition: var(--transition);
 }
 .header-frame {
@@ -226,4 +229,66 @@ header {
 .header-frames:hover .header-frame:nth-child(2) {
   top: 0;
   left: 16rem;
+}
+/*=======================ABOUT=================*/
+#about {
+  margin-top: 20rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 43% 53%;
+  gap: 4%;
+}
+
+.about-left {
+  position: relative;
+}
+.about-image-bg {
+  width: 15rem;
+  height: 20rem;
+  background-color: var(--color-bg-4);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.about-image-lg {
+  width: 21rem;
+  position: relative;
+  bottom: 1rem;
+  left: 1rem;
+  filter: saturate(0) brightness(0.5);
+  transition: var(--transition);
+}
+.about-image-md {
+  width: 17rem;
+  height: 17rem;
+  position: absolute;
+  top: 6rem;
+  left: 10rem;
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: 2rem 2rem 2rem rgba(0 0 0 / 0.2);
+}
+.about-left:hover .about-image-md {
+  opacity: 0;
+}
+.about-left:hover .about-image-lg {
+  filter: saturate(1) brightness(1);
+  border: 1rem solid var(--color-bg-4);
+  box-shadow: 1rem 1rem 3rem rgba(0 0 0 / 0.2);
+  bottom: 0;
+  left: 0;
+}
+.about-right {
+  margin-left: 5rem;
+}
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.about-right p {
+  font-size: 0.8rem;
+  width: 91%;
+  margin-bottom: 1rem;
 }
