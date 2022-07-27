@@ -121,6 +121,7 @@ nav {
 header {
   max-width: 100vw;
   height: 100vh;
+  top: 0;
   background-image: linear-gradient(var(--color-bg-2), var(--color-bg-1));
   overflow: hidden;
   position: relative;
@@ -129,7 +130,7 @@ header {
   display: grid;
   grid-template-columns: 53% 43%;
   gap: 4%;
-  margin-top: 10rem;
+  margin-top: 5rem;
   position: relative;
 }
 .header-hashtag {
@@ -138,18 +139,17 @@ header {
 
 .header-left > p {
   width: 75%;
-  font-size: 0.8rem;
+
   margin-top: 2rem;
   text-align: justify;
 }
 .header-btn,
 .about-btn {
-  font-size: 0.8rem;
   display: inline-block;
   margin-top: 1rem;
   background-color: var(--color-primary);
   color: var(--color-bg-4);
-  padding: 0.4rem 1rem;
+  padding: 0.5rem 2rem;
   font-weight: 500;
   border-radius: 2rem;
   transition: var(--transition);
@@ -174,7 +174,7 @@ header {
   right: 0;
 }
 .header-image-lg {
-  width: 17rem;
+  width: 22rem;
   /* height: 28rem; */
   position: absolute;
   top: 1rem;
@@ -187,8 +187,8 @@ header {
   width: 16rem;
   height: 16rem;
   position: absolute;
-  top: 8rem;
-  right: 9rem;
+  top: 10rem;
+  right: 10rem;
   overflow: hidden;
   transition: var(--transition);
 }
@@ -206,7 +206,7 @@ header {
   width: 15rem;
   position: absolute;
   top: 75vh;
-  left: 20rem;
+  left: 25vw;
   transition: var(--transition);
 }
 .header-frame {
@@ -251,12 +251,12 @@ header {
   height: 20rem;
   background-color: var(--color-bg-4);
   position: absolute;
-  bottom: 0rem;
+  bottom: 0;
   left: 0;
 }
 .about-image-lg {
-  width: 21rem;
-  position: relative;
+  width: 25rem;
+  position: absolute;
   bottom: 1rem;
   left: 1rem;
   filter: saturate(0) brightness(0.5);
@@ -266,11 +266,11 @@ header {
   width: 17rem;
   height: 17rem;
   position: absolute;
-  top: 6rem;
-  left: 10rem;
+  top: 10rem;
+  left: 12rem;
   overflow: hidden;
   transition: var(--transition);
-  box-shadow: 2rem 2rem 2rem rgba(0 0 0 / 0.2);
+  box-shadow: 2rem 2rem 3rem rgba(0 0 0 / 0.2);
 }
 .about-left:hover .about-image-md {
   opacity: 0;
@@ -286,11 +286,11 @@ header {
   margin-left: 5rem;
 }
 .about-title {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   margin-bottom: 3rem;
 }
 .about-right p {
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   width: 91%;
   margin-bottom: 1rem;
 }
@@ -301,13 +301,11 @@ header {
 }
 
 .gallery-header h2 {
-  font-size: 2.5rem;
   margin-bottom: 3rem;
 }
 
 .gallery-header p {
   width: 54%;
-  font-size: 0.8rem;
   margin-bottom: 4rem;
 }
 .gallery-images {
@@ -337,12 +335,10 @@ header {
   text-align: right;
 }
 .collage-header h2 {
-  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
 .collage-header p {
-  font-size: 0.8rem;
   padding-left: 39%;
   margin-bottom: 4rem;
 }
@@ -392,6 +388,6 @@ header {
 .footer {
   display: flex;
   justify-content: center;
-  font-size: 0.8rem;
+
   padding: 2rem;
 }
