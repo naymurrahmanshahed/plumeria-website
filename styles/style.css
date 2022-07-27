@@ -524,6 +524,7 @@ header {
     width: 100%;
   }
   .about-image-lg {
+    width: 20rem;
     margin-bottom: 3rem;
     position: static;
   }
