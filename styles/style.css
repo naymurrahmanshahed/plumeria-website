@@ -506,6 +506,7 @@ header {
     order: 1;
   }
   .header-image-lg {
+    width: 20rem;
     position: static;
     margin-bottom: 3rem;
   }
